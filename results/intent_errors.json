@@ -1,0 +1,10 @@
+[
+  {
+    "text": "goodbye",
+    "intent": "bye",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.4469422996044159
+    }
+  }
+]
