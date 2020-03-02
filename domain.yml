@@ -1,0 +1,122 @@
+slots:
+#sales form
+  company:
+    type: unfeaturized
+  job_function:
+    type: unfeaturized
+  person_name:
+    type: unfeaturized
+  budget:
+    type: unfeaturized
+  business_email:
+    type: unfeaturized
+  use_case:
+    type: unfeaturized
+#browser form
+  browser_type:
+    type: unfeaturized
+  browser_version:
+    type: unfeaturized
+  platform_type:
+    type: unfeaturized
+
+intents:
+  - chitchat
+  - stop
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - thank
+  - bye
+  - faq
+  - contact_sales
+  - inform
+  - everything_i_know
+  - developed_by
+  - browser_support
+#  - platform_support
+#  - database_support
+
+responses:
+## Greetings
+  utter_greet:
+  - text: "Hey! How are you?"
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+  utter_did_that_help:
+  - text: "Did that help you?"
+  utter_happy:
+  - text: "Great, carry on!"
+  utter_goodbye:
+  - text: "Bye"
+  utter_bot_challenge:
+  - text: "Humans call me different names - bot, chatbot, an assistant. But what matters the most is that I am ready to help you. :-)"
+  utter_bye:
+  - text: "Bye!"
+  utter_noworries:
+  - text: "No worries!"
+  utter_ask_continue:
+      - text: "do you want to continue?"
+
+## Bot abilities
+  utter_everything_i_know:
+    - text: "Thanks for asking! I'm trained to answer question on Enterprise Data Catalog. I'm getting trained and you can expect more in the future"
+  utter_developed_by:
+    - text: "I was developed by EDC QA team situated in India. They are kind people. They teach me everyday without charging me a penny."
+## Chit chat
+  utter_chitchat:
+    - text: "No chitchat pls. I ain't got time for it"
+##Sales form
+  utter_ask_business_email:
+    - text: "What's your business email?"
+  utter_ask_company:
+    - text: "What company do you work for?"
+  utter_ask_budget:
+    - text: "What's your annual budget for conversational AI?"
+  utter_ask_job_function:
+    - text: "What's your job?"
+  utter_ask_person_name:
+    - text: "What's your name?"
+  utter_ask_use_case:
+    - text: "What's your use case?"
+
+##Browser form
+  utter_browser_support:
+    - text: "I think you are trying to find the browser compatibility with our product. I can help you with that. But, please provide me with some info..."
+  utter_ask_browser_type:
+    - text: "What is your browser type?"
+  utter_ask_browser_version:
+    - text: "What is your browser version?"
+  utter_ask_platform_type:
+    - text: "Which platform are you running on - Windows,Unix,Mac?"
+
+#utter_ask_location:
+# - text: "Give me the area you live in to find the nearest {facility_type} #facility_type is the slot
+
+actions:
+  - respond_faq
+
+forms:
+  - sales_form
+  - browser_form
+
+entities:
+  - company
+  - job_function
+  - person_name
+  - budget
+  - business_email
+  - use_case
+  - browser_type
+  - browser_version
+  - platform_type
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
