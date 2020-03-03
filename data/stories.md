@@ -115,15 +115,12 @@
 * thank
     - utter_noworries
 
-##developed_by
+## developed_by
 
 * developed_by
     - utter_developed_by
 
-##created from rasax
-
-    - utter_cheer_up
-    - utter_did_that_help
+## created from rasax
 * developed_by
     - utter_developed_by
 * everything_i_know
