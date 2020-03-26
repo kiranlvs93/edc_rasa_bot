@@ -106,10 +106,8 @@
     - utter_bot_challenge
 * bye
     - utter_bye
-#*********************************************************************************************
-#Client Support
-#*********************************************************************************************
-## greet+botchallenge+what do i know+developed_by+client_support+bye
+
+## ************client support**********greet+botchallenge+what do i know+developed_by+client_support+bye
 * greet
     - utter_greet
 * bot_challenge
