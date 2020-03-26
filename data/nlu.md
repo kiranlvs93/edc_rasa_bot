@@ -37,6 +37,7 @@
 
 ## intent:mood_great
 - perfect
+- fine
 - very good
 - great
 - amazing
@@ -97,7 +98,6 @@
 - Who developed you?
 - Who brought you on earth?
 - Were you created by Informatica?
-- who made you?
 
 ## intent:browser_support
 - Which browsers does EDC support?
@@ -112,21 +112,33 @@
 - Does edc support [ie](browser_type)?
 - Does Enterprise Data Catalog support [mozilla](browser_type) browser?
 
-## intent:faq/ask_channels
+## intent:client_support
+- Which clients does Informatica support?
+- Do you support [pc](client_type) for [windows](platform_type)?
+- Do you support [power center](client_type) browser?
+- [Informatica Developer Tool 64bit3](client_type) is supported by your product?
+- Can you handle [Metadata Manager Agent](client_type)?
+- Do you work on [EDC Agent](client_type)?
+- Does you product work on [pwx](client_type)?
+- Do you run on [mdm](client_type) client?
+- Which clients do you support on [windows](platform_type)?
+- I work on [mac](platform_type). Which clients do you run on this platform?
+
+## intent: faq/ask_channels
 - What channels of communication does rasa support?
 - what channels do you support?
 - what chat channels does rasa uses
 - channels supported by Rasa
 - which messaging channels does rasa support?
 
-## intent:faq/ask_languages
+## intent: faq/ask_languages
 - what language does rasa support?
 - which language do you support?
 - which languages supports rasa
 - can I use rasa also for another laguage?
 - languages supported
 
-## intent:faq/ask_rasax
+## intent: faq/ask_rasax
 - I want information about rasa x
 - i want to learn more about Rasa X
 - what is rasa x?
@@ -146,27 +158,43 @@
 - sales please
 
 ## intent:inform
+- [engineer](job_function)
+- [brand manager](job_function)
+- [marketing](job_function)
+- [sales manager](job_function)
+- [I'm an engineer](job_function)
+- [I work as a CEO of the company](job_function)
+- We plan to build a [sales bot](use_case) to increase our sales by 500%.
+- we plan to build a [sales bot](use_case) to increase our revenue by 100%.
+- a [insurance tool](use_case) that consults potential customers on the best life insurance to choose.
+- we're building a [conversational assistant](use_case) for our employees to book meeting rooms.
+- [sales bot](use_case)
+- [faq bot](use_case) for our organisation
+- [100k](budget)
 - [100k](budget)
 - [240k/year](budget)
 - [150,000 USD](budget)
+- [1 million](budget)
+- My budget is [1K rupees](budget)
+- [John Doe](person_name)
+- [Jane Doe](person_name)
+- [Max Mustermann](person_name)
+- [Max Meier](person_name)
+- [Krishna](person_name)
+- [Madhava](person_name)
+- [Kiran](person_name)
 - I work for [Rasa](company)
+- [Informatica](company) is my company
+- [Informatica](company)
 - The name of the company is [ACME](company)
 - company: [Rasa Technologies](company)
 - it's a small company from the US, the name is [Hooli](company)
 - [maxmeier@firma.de](business_email)
 - [bot-fan@bots.com](business_email)
-- [engineer](job_function)
-- [brand manager](job_function)
-- [marketing](job_function)
-- [sales manager](job_function)
-- [John Doe](person_name)
-- [Jane Doe](person_name)
-- [Max Mustermann](person_name)
-- [Max Meier](person_name)
-- We plan to build a [sales bot](use_case) to increase our sales by 500%.
-- we plan to build a [sales bot](use_case) to increase our revenue by 100%.
-- a [insurance tool](use_case) that consults potential customers on the best life insurance to choose.
-- we're building a [conversational assistant](use_case) for our employees to book meeting rooms.
+- [maxmeier@firma.de](business_email)
+- [bot-fan@bots.com](business_email)
+- [klvs@informatica.com](business_email)
+- [kgurramkonda@informatica.com](business_email)
 
 ## intent:chitchat
 - can you share your boss with me?
