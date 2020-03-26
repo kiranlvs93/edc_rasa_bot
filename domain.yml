@@ -12,13 +12,20 @@ slots:
     type: unfeaturized
   use_case:
     type: unfeaturized
+
 #browser form
   browser_type:
     type: unfeaturized
-  browser_version:
-    type: unfeaturized
+#  browser_version:
+#    type: unfeaturized
   platform_type:
     type: unfeaturized
+
+#client_form
+    #  client_version:
+    #    type: unfeaturized
+  client_type:
+      type: unfeaturized
 
 intents:
   - chitchat
@@ -38,7 +45,7 @@ intents:
   - everything_i_know
   - developed_by
   - browser_support
-#  - platform_support
+  - client_support
 #  - database_support
 
 responses:
@@ -85,16 +92,23 @@ responses:
   utter_ask_use_case:
     - text: "What's your use case?"
 
-##Browser form
+##browser_form
   utter_browser_support:
-    - text: "I think you are trying to find the browser compatibility with our product. I can help you with that. But, please provide me with some info..."
+    - text: ""
+#    - text: "I think you are trying to find the browser compatibility with our product. I can help you with that. But, please provide me with some info..."
   utter_ask_browser_type:
-    - text: "What is your browser type?"
-  utter_ask_browser_version:
-    - text: "What is your browser version?"
+    - text: "Which browser are you running on - {browsers}?"
+#  utter_ask_browser_version:
+#    - text: "What is your browser version?"
   utter_ask_platform_type:
-    - text: "Which platform are you running on - Windows,Unix,Mac?"
+    - text: "Which platform are you running on - {platforms}?"
 
+##client_form
+  utter_client_support:
+    - text: ""
+#    - text: "I think you are trying to find the browser compatibility with our product. I can help you with that. But, please provide me with some info..."
+  utter_ask_client_type:
+    - text: "Choose a client that you are looking for - {clients}?"
 #utter_ask_location:
 # - text: "Give me the area you live in to find the nearest {facility_type} #facility_type is the slot
 
@@ -104,6 +118,7 @@ actions:
 forms:
   - sales_form
   - browser_form
+  - client_form
 
 entities:
   - company
@@ -113,8 +128,9 @@ entities:
   - business_email
   - use_case
   - browser_type
-  - browser_version
+#  - browser_version
   - platform_type
+  - client_type
 
 
 session_config:
