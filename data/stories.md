@@ -107,7 +107,7 @@
 * bye
     - utter_bye
 
-## ************client support**********greet+botchallenge+what do i know+developed_by+client_support+bye
+## client_support_greet+botchallenge+what do i know+developed_by+client_support+bye
 * greet
     - utter_greet
 * bot_challenge
