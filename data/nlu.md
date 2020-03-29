@@ -13,6 +13,9 @@
 - Good morning
 - hi again
 - hi folks
+- Wassup
+- howdy
+- hey dude
 
 ## intent:goodbye
 - bye
@@ -124,21 +127,21 @@
 - Which clients do you support on [windows](platform_type)?
 - I work on [mac](platform_type). Which clients do you run on this platform?
 
-## intent: faq/ask_channels
+## intent:faq/ask_channels
 - What channels of communication does rasa support?
 - what channels do you support?
 - what chat channels does rasa uses
 - channels supported by Rasa
 - which messaging channels does rasa support?
 
-## intent: faq/ask_languages
+## intent:faq/ask_languages
 - what language does rasa support?
 - which language do you support?
 - which languages supports rasa
 - can I use rasa also for another laguage?
 - languages supported
 
-## intent: faq/ask_rasax
+## intent:faq/ask_rasax
 - I want information about rasa x
 - i want to learn more about Rasa X
 - what is rasa x?
@@ -171,7 +174,6 @@
 - [sales bot](use_case)
 - [faq bot](use_case) for our organisation
 - [100k](budget)
-- [100k](budget)
 - [240k/year](budget)
 - [150,000 USD](budget)
 - [1 million](budget)
@@ -189,8 +191,6 @@
 - The name of the company is [ACME](company)
 - company: [Rasa Technologies](company)
 - it's a small company from the US, the name is [Hooli](company)
-- [maxmeier@firma.de](business_email)
-- [bot-fan@bots.com](business_email)
 - [maxmeier@firma.de](business_email)
 - [bot-fan@bots.com](business_email)
 - [klvs@informatica.com](business_email)
